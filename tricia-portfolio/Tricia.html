@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricia's Portfolio</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f5;
+        }
+        
+        header {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        nav {
+            background-color: #ffc0cb;
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffb6c1;
+        }
+        
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .portfolio-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .portfolio-item-content {
+            padding: 1rem;
+        }
+        
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tricia Guanlao</h1>
+        <p>Web Designer & Editor</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about" class="hero">
+            <img src="shashapic.jpg" alt="Tricia">
+            <h2>About Me</h2>
+            <p>My name is Tricia Mae S. Guanlao, a 22-year-old girl passionate about exploring the world, learning new things, and personal growth. I come from a supportive family that encourages me to pursue my dreams in academics, sports, and creative endeavors. My curiosity is one of my greatest strengths, and I enjoy reading books that introduce new ideas and provoke critical thinking.
+
+                In my free time, I express my creativity through drawing and painting, and I enjoy playing online mobile games with friends, which teach me teamwork and perseverance. I believe in kindness and compassion, always striving to make a positive impact on those around me. Looking ahead, I am committed to continuing my growth, excelling in my pursuits, and making the most of every opportunity.</p>
+        </section>
+        
+        <section id="portfolio">
+            <h2>My Hobbies</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="watching.jpg" alt="Watching">
+                    <div class="portfolio-item-content">
+                        <h3>Watching</h3>
+                        <p>I love watching movies like horror, action and most likely KDRAMA.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="playing.avif" alt="Playing">
+                    <div class="portfolio-item-content">
+                        <h3>Playing</h3>
+                        <p>I enjoying Playing Mobile Games to Relieve my Stress and also I can bond with my siblings and my friends.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="eating.webp" alt="Eating">
+                    <div class="portfolio-item-content">
+                        <h3>Eating</h3>
+                        <p>Eating is My Most Favorite Hobbies because i enjoy Eating even though I'm thinking a lot.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me at: <a href="mailto:Triciamaemg111@gmail.com">Triciamaemg111@gmail.com</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;Tricia. Thank you For Visiting My Website.</p>
+    </footer>
+</body>
+</html>
